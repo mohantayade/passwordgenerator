@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-generator</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Generate a<br><span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="images/copy.png" onclick="copyPassword()">
+        </div>
+        <!-- <button onclick="createPassword()" id="btn" ><img src="/images/generate.png">Generate Password</button> -->
+        <button id="btn" ><img src="/images/generate.png">Generate Password</button>
+
+
+
+        <div class="check">
+
+            <label class="lab">
+                <input type="number" id="totalChar" name="" max="30" min="4" value="8" />
+                
+            </label>
+
+            <label class="lab">UpperCase
+                <input type="checkbox" id="upperid" class="checkbox" checked="checked">
+                
+            </label>
+            <label class="lab">LowerCase
+                <input type="checkbox" id="lowerid" class="checkbox">
+                
+            </label>
+
+            <label class="lab">Number
+                <input type="checkbox" id="numberid" class="checkbox">
+                
+            </label>
+
+            <label class="lab">Symbol
+                <input type="checkbox" id="symbolid" class="checkbox">
+               
+            </label>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
